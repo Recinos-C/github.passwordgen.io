@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class= "body">
+        <div class = "content">
+        <h1>Generate Password</h1>
+        <hr>
+        <h2>Special characters? </h2>
+        <label class="switch">
+            <input id="sp1" type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+        <h2>Capital letters?</h2>
+        <label class="switch">
+            <input id="cl1" type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+        <h2>Lowercase letters?</h2>
+        <label class="switch">
+            <input id="lc1" type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+
+        <h2 id="bio">How many characters?</h2>
+        
+        <div class="column">
+            <input type="text" id="userlength" name="userinput" placeholder="please input length...">
+
+        <form>
+            <textarea id = "copyArea" name="codearea" placeholder="Your code here"></textarea>
+
+        </form>
+        <hr>
+        <button id = "generate" onclick="generateCode()"> Generate Password</button>
+        <button id = "copy" onclick="copytoClip()"> Copy Password</button>
+        </div>
+    </div>
+ <script src="./generate.js"></script>
+</body>
+</html>

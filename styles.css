@@ -1,0 +1,120 @@
+html,body{
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    margin: auto;
+    width: 960px;
+    position: relative;
+    min-height:100%;
+}
+hr{
+    margin: 20px;
+}
+.content{
+    overflow: hidden;
+    background: #efeee7;
+    margin: auto;
+    padding-bottom: 20px;
+}
+::placeholder{
+    margin: 20px;
+    font-size: large;
+    text-align: center;
+}
+
+
+#copyArea{
+    height: 200px;
+    width:95%;
+    background-color: #efeee7 ;
+    border: darkslategray dashed 4px;
+    margin: 20px;
+}
+
+h1{
+    margin-left: 20px;
+    color: darkslategray;
+    margin-bottom: 20px;
+}
+h2{
+    margin-left: 20px;
+    color: darkslategray;
+    margin-bottom: 20px;
+}
+
+.switch{
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input{
+    opacity:0;
+    width:0;
+    height:0;
+}
+.slider{
+    position:absolute;
+    cursor:pointer;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: cadetblue;
+    transition:0.5s;
+}
+.slider:before{
+    position:absolute;
+    content:" ";
+    height:26px;
+    width:26px;
+    left:4px;
+    bottom: 4px;
+    background-color: honeydew;
+    transition: 0.5s;
+}
+input:checked + .slider{
+    background-color: brown;
+}
+input:focus + .slider {
+    box-shadow:0 0 1px grey; 
+}
+input:checked + .slider:before {
+transform: translateX(26px);
+}
+.slider.round{
+    border-radius: 34px;
+
+}
+.slider.round:before{
+    border-radius: 50%;
+}
+
+input{
+    margin-left: 20px;
+    width: 25%;
+    height: 30px;
+}
+input::placeholder{
+    text-align: left;
+}
+
+#generate{
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(18, 175, 39);
+    text-align: center;
+    padding:10px;
+}
+#copy{
+    float: right;
+    margin-right: 20px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    padding:10px;
+}
